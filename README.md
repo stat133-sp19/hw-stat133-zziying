@@ -4,7 +4,7 @@ Private Repository for HW assignments of Stat 133 (Spring 2019)
 
 - Name: Irene Zhang
 - Github username: zziying
-- Email: address ziying612@berkeley.edu
+- Email: ziying612@berkeley.edu
 - Lab section: 103
 - GSI: Yulun Wu
 
