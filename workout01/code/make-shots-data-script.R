@@ -52,7 +52,7 @@ summary(andre)
 sink()
 # Graymond Green summary
 sink(file = "../imirenee/Desktop/workout01/output/draymond-green-summary.txt")
-summary(graymond)
+summary(draymond)
 sink()
 #Kevin Durant summary
 sink(file = "../imirenee/Desktop/workout01/output/kevin-durant-summary.txt")
