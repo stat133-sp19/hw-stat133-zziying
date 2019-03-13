@@ -88,13 +88,13 @@ shot_chart <- ggplot(data = NBA) + annotation_custom(court_image, -250, 250, -50
   theme_minimal() + facet_wrap(~name)
 
 #Save the image in pdf format
-pdf(file = "../imirenee/desktop/workout01/images/gsw-shot-charts.pdf",
+pdf(file = "../imirenee/desktop/hw-stat133/workout01/images/gsw-shot-charts.pdf",
     height = 7, width = 8)
 shot_chart
 dev.off()
 
 #save the image in png format
-png(filename = "../imirenee/desktop/workout01/images/gsw-shot-charts.png",
+png(filename = "../imirenee/desktop/hw-stat133/workout01/images/gsw-shot-charts.png",
     width = 768, height = 672, units = "px")
 shot_chart
 dev.off()
