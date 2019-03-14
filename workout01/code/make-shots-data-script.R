@@ -73,7 +73,7 @@ write.csv(
 )
 
 # use sink() to send the summary() output of the assembled table
-sink(file = "../imirenee/Desktop/workout01/output/shots-data-summary")
+sink(file = "../imirenee/Desktop/hw-stat133/workout01/output/shots-data-summary.txt")
 summary(NBA)
 sink()
 
