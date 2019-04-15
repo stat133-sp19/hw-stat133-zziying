@@ -10,7 +10,7 @@ Shiny App: Compute the future amount of different saving and investing modes, an
 *Year*: Number of years. From 0 to 50, default value: 20.  
 *Facet*: Faceting option. "Yes" or "No".  
 
-**Output:**
+**Output:**  
 *Timeline Graph*: Visualize three kinds of savings-investing modes:  
 1. future value of initial amount  
 2. future value of initial amuont with annuity  
