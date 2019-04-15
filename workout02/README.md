@@ -1,6 +1,8 @@
 # Workout 02
 
-Shiny App: Compute the future amount of different saving and investing modes, and visualize them in different scenarios  
+Shiny App: Compute the future amount of different saving and investing modes, and visualize them in different scenarios.  
+
+To see published application please click here: https://zziying.shinyapps.io/workout02/  
 
 **Input:**  
 
@@ -15,7 +17,7 @@ Shiny App: Compute the future amount of different saving and investing modes, an
 
 + *Timeline Graph*: Visualize three kinds of savings-investing modes:  
 1. future value of initial amount  
-2. future value of initial amuont with annuity  
+2. future value of initial amount with annuity  
 3. future value of initial amount with growing annuity  
 
 + *Table* : compute annual balance of each modality.  
