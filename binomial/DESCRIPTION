@@ -1,0 +1,17 @@
+Package: binomial
+Type: Package
+Title: Binomial Random Variable
+Version: 0.1.0
+Author: Irene Zhang
+Maintainer: Irene Zhang <ziying612@berkeley.edu>
+Description: Functions to create a binomial distribution object, and to
+    calculate the binomial probability and to summarize and visualize 
+    the probability.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Suggests: knitr,
+    rmarkdown,
+    testthat

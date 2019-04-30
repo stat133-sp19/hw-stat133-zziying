@@ -1,0 +1,102 @@
+---
+title: "Binomial Tutorial"
+author: "Irene Zhang"
+date: "4/27/2019"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Binomial Distribution}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+## Binomial Distribution
+
+The package `"binomial"` helps calculate the theoretical probability distribution with given the number of success in a fixed number of random trials performed under a constant probability of success on each trial, and to visualize and summarize such a probability distribution.
+ 
+## Creating a binomial distribution
+
+To get start, create a object of class `"bindis"` using `bin_distribution()` function with number of trials and probability of success as arguments:
+
+```{r bindis}
+dist <- bin_distribution(trials = 5, prob = 0.5)
+dist
+```
+
+`bin_distribution()` creates an object shows a data frame that shows the probability of each successes in a fixed number of trials, given the probability of successes.
+
+## Plot the distribution
+
+You can also visualize how the probability distributed by plotting the object of class `"bindis"` by function `plot()`:
+
+```{r}
+plot(dist)
+```
+
+## Cumulative Probability
+
+In addition to just showing the probability, you can calculate the cumulative probability of distribution by create a object of class`"bincum"` using `bin_cumulative()` function, which display a dataframe with both probability distribution and cumulative probabilities:
+
+```{r bincum}
+cumulative <- bin_cumulative(trials = 5, prob = 0.5)
+cumulative
+```
+
+The third column displays a list of cumulative probability corresponds to the number of trials.
+
+Like the normal probability distribution as above, you can also plot the cumulative probability by using `plot` functions which takes an object of class `"bincum"` as arguments:
+
+```{r}
+plot(cumulative)
+```
+
+## Binomial Variable
+
+To simply create a binomial distribution with only displaying the random variables, create a binomial random variable object of class`"binvar"` by calling `bin_variable()` function:
+
+```{r}
+bin <- bin_variable(trials = 10, prob = 0.3)
+bin
+```
+
+## Summary Binomial
+
+Once you create a `"binvar"` object, you can use function `summary()`to see each measure summary of the binomial distribution with given trials and probability inputs:
+
+```{r}
+bin.sum <- summary(bin)
+bin.sum
+```
+
+## Calculate the meansures
+
+Instead of calculating the whole summarized meansures of the binomial distribution, you can just calculate one or more individual elements by using the following functions with number of trials and success probability as arguments:
+
+To calculate the mean, you can use `bin_mean()`:
+```{r}
+bin_mean(10, 0.3)
+```
+
+Or if you wish to calculate the variance, you can use `bin_variance()`:
+```{R}
+bin_variance(10,0.3)
+```
+
+To calculate the mode, which is the most likely number of success of this binomial distribution, use `bin_mode()`:
+```{r}
+bin_mode(10,0.3)
+```
+
+To calculate the skewness, use `bin_skewness()`:
+```{r}
+bin_skewness(10,0.3)
+```
+
+To calculate the kurtosis, use `bin_kurtosis()`:
+```{r}
+bin_kurtosis(10,0.3)
+```
