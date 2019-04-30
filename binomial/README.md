@@ -43,14 +43,6 @@ dist
 #> 5       4     0.15625
 #> 6       5     0.03125
 
-# plot the probability distribution
-plot(dist)
-```
-
-![](README-unnamed-chunk-1-1.png)
-
-``` r
-
 # create a cumulative distribution
 cumdis <- bin_cumulative(trials = 5, prob = 0.5)
 cumdis
@@ -61,14 +53,6 @@ cumdis
 #> 4       3     0.31250    0.81250
 #> 5       4     0.15625    0.96875
 #> 6       5     0.03125    1.00000
-
-# visualize the cumulative probability distribution
-plot(cumdis)
-```
-
-![](README-unnamed-chunk-1-2.png)
-
-``` r
 
 # list the binomial variables 
 var <- bin_variable(trials = 5, prob = 0.5)
@@ -88,3 +72,5 @@ summary(var)
 #> - skewness:  0 
 #> - kurtosis:  -0.4
 ```
+
+*For more information, please check out vignettes/Tutorial file*
