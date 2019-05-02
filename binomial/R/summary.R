@@ -44,7 +44,7 @@ aux_skewness <- function(trials,prob){
 #   trials: number of trials (a numeric number)
 #   prob: probability of success (a numeric number)
 # Output
-#   a numeric value, mean of the distribution
+#   a numeric value, measure tailedness of binomial distribution
 aux_kurtosis <- function(trials,prob){
   return((1 - 6 * prob * (1-prob))/ (trials * prob * (1 - prob)))
 }
