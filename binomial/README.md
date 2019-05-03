@@ -2,7 +2,7 @@
 Workout03: Binomial Package
 ---------------------------
 
-The package `binomial` helps compute and generate the theoretical probability distribution with given numer of success and number of random trials.
+The package `binomial` helps compute and generate the theoretical probability distribution with given nubmer of success and number of random trials.
 
 -   `bin_distribution()` creates an object of class `bindis` with a data frame that shows the probability of each successes in a fixed number of trials
 
@@ -14,7 +14,9 @@ The package `binomial` helps compute and generate the theoretical probability di
 
 -   `summary()` method for a `binvar` object to list the statistical elements of the binomial distribution.
 
-#### Other helpful functions to calculate the statistical measures:
+#### Other helpful functions to calculate the statistical measurements:
+
+-   `bin_probability(sucess, trials, prob)` to calculate the probability.
 
 -   `bin_mean()` to calculate the mean.
 
